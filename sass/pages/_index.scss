@@ -1,0 +1,34 @@
+.menus{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    a{
+        width: 35%;
+    }
+}
+
+.soon{
+    display: flex;
+    justify-content: center;
+    color: $main-color;
+    background-color: $main-bg-color;
+    font-family: $main-font;
+    width: 250px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    margin: 5% auto 5% auto;
+    h3{
+        margin: 0;
+    }
+    div{
+        align-self: flex-end;
+        width: 5px;
+        height: 5px;
+        background: $main-color;
+        border-radius: 50%;
+        margin-left: 2%;
+        margin-bottom: 4px;
+    }
+}

@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+
+.container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $container-color;
+}
+
+header, footer{
+    color: $main-color;
+    background-color: $main-bg-color;
+}
+
+header{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    h1{
+        margin: 0;
+        font-family: $logo-font;
+    }
+}
+
+footer{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    font-family: $main-font;
+    position: fixed;
+    bottom: 0;
+    a{
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+}
