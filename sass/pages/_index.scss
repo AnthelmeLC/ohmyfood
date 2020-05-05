@@ -11,24 +11,75 @@
     article{
         height: 100%;
         box-shadow: 1px 1px 10px #c7c3c3;
-    }
-    h2{
-        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 .menu{
     &1{
         background-color: $bg-color-menu1;
+        h2{
+        font-family: $font-menu1;
+        font-size: xx-large;
+        font-weight: lighter;
+        }
+        p{
+            font-family: $font-menu1-p;
+            font-size: xx-large;
+            font-weight: bolder;
+            margin: 0;
+        }
     }
     &2{
         background-color: $bg-color-menu2;
+        h2{
+            font-family: $font-menu2;
+            font-weight: lighter;
+            background: linear-gradient(170deg, $menu2-color1 30%, $menu2-color3 60%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p{
+            font-family: $font-menu2-p;
+            font-size: xx-large;
+            color: $menu2-color1;
+        }
     }
     &3{
         background-color: $bg-color-menu3;
+        h2{
+            font-family: $font-menu3;
+            font-size: xx-large;
+            font-weight: lighter;background: linear-gradient(170deg, $menu3-color1 40%, $menu3-color3 80%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding-left: 4px;
+        }
+        p{
+            font-family: $font-menu3-p;
+            font-size: xx-large;
+            color: $menu3-color3;
+        }
     }
     &4{
         background-color: $bg-color-menu4;
+        h2{
+            font-family: $font-menu4;
+            font-size: xx-large;
+            font-weight: lighter;
+            font-weight: lighter;background: linear-gradient(170deg, $menu4-color1 20%, $menu4-color3 60%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding-right: 5px;
+        }
+        p{
+            font-family: $font-menu4-p;
+            font-size: xx-large;
+            color: $menu4-color2;
+        }
     }
 }
 
