@@ -34,6 +34,13 @@
   font-family: "kaushanscript";
   src: url(../ressources/fonts/kaushanscript.ttf);
 }
+/*@mixin style-menu (){
+    @each $number, $style in $map-prev-menus{
+        &number{
+            @include style-prev-menu();
+        }
+    }
+}*/
 html {
   background-color: #ededed;
 }
@@ -43,11 +50,18 @@ body {
 }
 
 .container {
-  width: 1000px;
+  width: 1300px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 61px;
   background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
 }
 
 header, footer {
@@ -63,11 +77,12 @@ header {
 header h1 {
   margin: 0;
   font-family: montserrat-semibold;
-  letter-spacing: -3px;
+  letter-spacing: -5px;
+  font-size: 3em;
 }
 
 footer {
-  width: 1000px;
+  width: 1300px;
   display: flex;
   justify-content: space-between;
   font-family: montserrat-light;
@@ -77,6 +92,16 @@ footer {
 footer a {
   margin-right: 2%;
   margin-left: 2%;
+}
+footer h4 {
+  font-size: x-large;
+  margin: 20px 0 20px 0;
+}
+
+.menu {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .menus {
@@ -105,26 +130,33 @@ footer a {
   font-family: devonshire;
   font-size: xx-large;
   font-weight: lighter;
+  background: linear-gradient(170deg, black 30%, black 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 4px 0 4px;
+  margin: 0;
 }
 .menu1 p {
   font-family: segoeprint;
-  font-size: xx-large;
-  font-weight: bolder;
-  margin: 0;
+  font-size: 3em;
+  color: black;
 }
 .menu2 {
   background-color: #fef5fd;
 }
 .menu2 h2 {
   font-family: croissantone;
+  font-size: xx-large;
   font-weight: lighter;
   background: linear-gradient(170deg, #c67412 30%, #945ef0 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 0 4px 0 4px;
+  margin: 0;
 }
 .menu2 p {
   font-family: serif12beta-bold;
-  font-size: xx-large;
+  font-size: 3em;
   color: #c67412;
 }
 .menu3 {
@@ -134,14 +166,15 @@ footer a {
   font-family: dancingscript;
   font-size: xx-large;
   font-weight: lighter;
-  background: linear-gradient(170deg, #0328db 40%, #229dfd 80%);
+  background: linear-gradient(170deg, #0328db 30%, #229dfd 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-left: 4px;
+  padding: 0 4px 0 4px;
+  margin: 0;
 }
 .menu3 p {
   font-family: segoeprint;
-  font-size: xx-large;
+  font-size: 3em;
   color: #229dfd;
 }
 .menu4 {
@@ -151,15 +184,15 @@ footer a {
   font-family: kaushanscript;
   font-size: xx-large;
   font-weight: lighter;
-  font-weight: lighter;
-  background: linear-gradient(170deg, #499c40 20%, #bbfd7e 60%);
+  background: linear-gradient(170deg, #499c40 30%, #bbfd7e 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-right: 5px;
+  padding: 0 4px 0 4px;
+  margin: 0;
 }
 .menu4 p {
   font-family: segoeprint;
-  font-size: xx-large;
+  font-size: 3em;
   color: #7ac75b;
 }
 
@@ -169,7 +202,7 @@ footer a {
   color: #fcca46;
   background-color: #569c87;
   font-family: montserrat-light;
-  width: 250px;
+  width: 33%;
   text-align: center;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -178,7 +211,7 @@ footer a {
 }
 .soon h3 {
   margin: 0;
-  font-size: larger;
+  font-size: xx-large;
 }
 .soon div {
   align-self: flex-end;

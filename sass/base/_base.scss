@@ -8,11 +8,18 @@ body{
 }
 
 .container{
-    width: 1000px;
+    width: 1300px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 61px;
     background-color: $container-color;
+}
+
+a{
+    text-decoration: none;
+    &:visited{
+        color: inherit;
+    }
 }
 
 header, footer{
@@ -27,12 +34,13 @@ header{
     h1{
         margin: 0;
         font-family: $logo-font;
-        letter-spacing: -3px;
+        letter-spacing: -5px;
+        font-size: 3em;
     }
 }
 
 footer{
-    width: 1000px;
+    width: 1300px;
     display: flex;
     justify-content: space-between;
     font-family: $main-font;
@@ -42,4 +50,14 @@ footer{
         margin-right: 2%;
         margin-left: 2%;
     }
+    h4{
+        font-size: x-large;
+        margin: 20px 0 20px 0;
+    }
+}
+
+.menu{
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
 }

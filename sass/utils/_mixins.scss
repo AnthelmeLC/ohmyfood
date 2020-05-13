@@ -1,0 +1,35 @@
+/*@mixin style-menu (){
+    @each $number, $style in $map-prev-menus{
+        &#{number}{
+            @include style-prev-menu();
+        }
+    }
+}*/
+
+
+
+
+
+
+
+
+
+@mixin style-prev-menu($number){
+    $style: map-get($map-prev-menus, $number);
+    background-color: map-get($style, bg-color);
+    h2{
+        font-family: map-get($style, main-font);
+        font-size: xx-large;
+        font-weight: lighter;
+        background: linear-gradient(170deg, map-get($style, color1) 30%, map-get($style, color2) 60%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 0 4px 0 4px;
+        margin: 0;
+        }
+    p{
+        font-family: map-get($style, font-p);
+        font-size: 3em;
+        color: map-get($style, color-p);
+    }
+}
