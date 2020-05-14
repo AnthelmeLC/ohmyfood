@@ -19,18 +19,7 @@
 }
 
 .menu{
-    &1{
-        @include style-prev-menu(1);
-    }
-    &2{
-        @include style-prev-menu(2);
-    }
-    &3{
-        @include style-prev-menu(3);
-    }
-    &4{
-        @include style-prev-menu(4);
-    }
+    @include style-prev-menu();
 }
 
 .soon{

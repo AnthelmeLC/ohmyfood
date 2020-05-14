@@ -1,3 +1,17 @@
+/*$map-style-menus:(
+    1:(
+
+    )
+    2:(
+
+    )
+    3:(
+
+    )
+    4:(
+
+    )
+)*/
 @font-face {
   font-family: "montserrat-semibold";
   src: url(../ressources/fonts/montserrat-semibold.ttf);
@@ -34,13 +48,6 @@
   font-family: "kaushanscript";
   src: url(../ressources/fonts/kaushanscript.ttf);
 }
-/*@mixin style-menu (){
-    @each $number, $style in $map-prev-menus{
-        &number{
-            @include style-prev-menu();
-        }
-    }
-}*/
 html {
   background-color: #ededed;
 }
@@ -93,13 +100,13 @@ footer a {
   margin-right: 2%;
   margin-left: 2%;
 }
-footer h4 {
+footer p {
   font-size: x-large;
   margin: 20px 0 20px 0;
 }
 
 .menu {
-  width: 60%;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
