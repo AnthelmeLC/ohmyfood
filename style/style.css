@@ -107,29 +107,10 @@ footer p {
 
 .menu {
   width: 90%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 3% auto 3% auto;
+  padding: 1%;
+  text-align: center;
 }
-
-.menus {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.menus a {
-  width: 35%;
-  height: 500px;
-  margin-top: 5%;
-}
-.menus article {
-  height: 100%;
-  box-shadow: 1px 1px 10px #c7c3c3;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .menu1 {
   background-color: #fcdfdb;
 }
@@ -140,12 +121,9 @@ footer p {
   background: linear-gradient(170deg, black 30%, black 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 0 4px 0 4px;
-  margin: 0;
 }
 .menu1 p {
   font-family: segoeprint;
-  font-size: 3em;
   color: black;
 }
 .menu2 {
@@ -158,12 +136,9 @@ footer p {
   background: linear-gradient(170deg, #c67412 30%, #945ef0 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 0 4px 0 4px;
-  margin: 0;
 }
 .menu2 p {
   font-family: serif12beta-bold;
-  font-size: 3em;
   color: #c67412;
 }
 .menu3 {
@@ -176,12 +151,9 @@ footer p {
   background: linear-gradient(170deg, #0328db 30%, #229dfd 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 0 4px 0 4px;
-  margin: 0;
 }
 .menu3 p {
   font-family: segoeprint;
-  font-size: 3em;
   color: #229dfd;
 }
 .menu4 {
@@ -194,10 +166,113 @@ footer p {
   background: linear-gradient(170deg, #499c40 30%, #bbfd7e 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.menu4 p {
+  font-family: segoeprint;
+  color: #7ac75b;
+}
+.menu article {
+  width: 75%;
+  margin: 3% auto 3% auto;
+}
+.menu h3 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.menu p {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.prev-menus {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.prev-menus a {
+  width: 35%;
+  height: 500px;
+  margin-top: 5%;
+}
+.prev-menus article {
+  height: 100%;
+  box-shadow: 1px 1px 10px #c7c3c3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev-menu1 {
+  background-color: #fcdfdb;
+}
+.prev-menu1 h2 {
+  font-family: devonshire;
+  font-size: xx-large;
+  font-weight: lighter;
+  background: linear-gradient(170deg, black 30%, black 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding: 0 4px 0 4px;
   margin: 0;
 }
-.menu4 p {
+.prev-menu1 p {
+  font-family: segoeprint;
+  font-size: 3em;
+  color: black;
+}
+.prev-menu2 {
+  background-color: #fef5fd;
+}
+.prev-menu2 h2 {
+  font-family: croissantone;
+  font-size: xx-large;
+  font-weight: lighter;
+  background: linear-gradient(170deg, #c67412 30%, #945ef0 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 4px 0 4px;
+  margin: 0;
+}
+.prev-menu2 p {
+  font-family: serif12beta-bold;
+  font-size: 3em;
+  color: #c67412;
+}
+.prev-menu3 {
+  background-color: #f9f9f9;
+}
+.prev-menu3 h2 {
+  font-family: dancingscript;
+  font-size: xx-large;
+  font-weight: lighter;
+  background: linear-gradient(170deg, #0328db 30%, #229dfd 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 4px 0 4px;
+  margin: 0;
+}
+.prev-menu3 p {
+  font-family: segoeprint;
+  font-size: 3em;
+  color: #229dfd;
+}
+.prev-menu4 {
+  background-color: #fdfffd;
+}
+.prev-menu4 h2 {
+  font-family: kaushanscript;
+  font-size: xx-large;
+  font-weight: lighter;
+  background: linear-gradient(170deg, #499c40 30%, #bbfd7e 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 4px 0 4px;
+  margin: 0;
+}
+.prev-menu4 p {
   font-family: segoeprint;
   font-size: 3em;
   color: #7ac75b;

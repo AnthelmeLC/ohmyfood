@@ -58,6 +58,22 @@ footer{
 
 .menu{
     width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 3% auto 3% auto;
+    padding: 1%;
+    text-align: center;
+    @include style-menu();
+    article{
+        width: 75%;
+        margin: 3% auto 3% auto;
+    }
+    h3{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    p{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
 }

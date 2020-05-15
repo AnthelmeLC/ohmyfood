@@ -1,4 +1,4 @@
-.menus{
+.prev-menus{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -18,7 +18,7 @@
     }
 }
 
-.menu{
+.prev-menu{
     @include style-prev-menu();
 }
 
