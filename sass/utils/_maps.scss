@@ -1,4 +1,4 @@
-$map-prev-menus:(
+$map-menus:(
     1:(
         bg-color : #fcdfdb,
         main-font : devonshire,
@@ -6,14 +6,20 @@ $map-prev-menus:(
         color1 : black,
         color2 : black,
         color-p : black,
+        title-size : 3em,
+        subtitle-weight : bold,
+        prev-title-size : 2.5em,
     ),
     2:(
         bg-color : #fef5fd,
         main-font : croissantone,
-        font-p : serif12beta-bold,
+        font-p : serif12beta,
         color1 : #c67412,
         color2 : #945ef0,
         color-p : #c67412,
+        title-size : 2.5em,
+        subtitle-weight : bold,
+        prev-title-size : 2em,
     ),
     3:(
         bg-color : #f9f9f9,
@@ -22,6 +28,9 @@ $map-prev-menus:(
         color1 : #0328db,
         color2 : #229dfd,
         color-p : #229dfd,
+        title-size : 4.5em,
+        subtitle-weight : normal,
+        prev-title-size : 2.5em,
     ),
     4:(
         bg-color : #fdfffd,
@@ -30,20 +39,8 @@ $map-prev-menus:(
         color1 : #499c40,
         color2 : #bbfd7e,
         color-p : #7ac75b,
+        title-size : 4.5em,
+        subtitle-weight : normal,
+        prev-title-size : 2.5em,
     )
 );
-
-/*$map-style-menus:(
-    1:(
-
-    )
-    2:(
-
-    )
-    3:(
-
-    )
-    4:(
-
-    )
-)*/

@@ -57,23 +57,38 @@ footer{
 }
 
 .menu{
-    width: 90%;
+    width: 70%;
     margin: 3% auto 3% auto;
     padding: 1%;
     text-align: center;
-    @include style-menu();
+    h2{
+        font-weight: lighter;
+        margin-bottom: 10%;
+    }
     article{
-        width: 75%;
-        margin: 3% auto 3% auto;
+        width: 80%;
+        margin: 5% auto 5% auto;
+        h3{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5%;
+            font-size: larger;
+            img{
+                max-width: 12em;
+            }
+        }
+        p{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 7%;
+            padding-right: 7%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            em{
+                font-size: larger;
+            }
+        }
     }
-    h3{
-        margin-top: 3%;
-        margin-bottom: 3%;
-    }
-    p{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 3%;
-        margin-bottom: 3%;
-    }
+    @include style-menu();
 }

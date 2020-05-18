@@ -1,17 +1,3 @@
-/*$map-style-menus:(
-    1:(
-
-    )
-    2:(
-
-    )
-    3:(
-
-    )
-    4:(
-
-    )
-)*/
 @font-face {
   font-family: "montserrat-semibold";
   src: url(../ressources/fonts/montserrat-semibold.ttf);
@@ -29,8 +15,8 @@
   src: url(../ressources/fonts/devonshire.ttf);
 }
 @font-face {
-  font-family: "serif12beta-bold";
-  src: url(../ressources/fonts/serif12beta-bold.ttf);
+  font-family: "serif12beta";
+  src: url(../ressources/fonts/serif12beta.ttf);
 }
 @font-face {
   font-family: "croissantone";
@@ -106,84 +92,107 @@ footer p {
 }
 
 .menu {
-  width: 90%;
+  width: 70%;
   margin: 3% auto 3% auto;
   padding: 1%;
   text-align: center;
+}
+.menu h2 {
+  font-weight: lighter;
+  margin-bottom: 10%;
+}
+.menu article {
+  width: 80%;
+  margin: 5% auto 5% auto;
+}
+.menu article h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+  font-size: larger;
+}
+.menu article h3 img {
+  max-width: 12em;
+}
+.menu article p {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7%;
+  padding-right: 7%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.menu article p em {
+  font-size: larger;
 }
 .menu1 {
   background-color: #fcdfdb;
 }
 .menu1 h2 {
   font-family: devonshire;
-  font-size: xx-large;
-  font-weight: lighter;
+  font-size: 3em;
   background: linear-gradient(170deg, black 30%, black 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.menu1 h3 {
+  font-family: segoeprint;
+  font-weight: bold;
+}
 .menu1 p {
   font-family: segoeprint;
-  color: black;
 }
 .menu2 {
   background-color: #fef5fd;
 }
 .menu2 h2 {
   font-family: croissantone;
-  font-size: xx-large;
-  font-weight: lighter;
+  font-size: 2.5em;
   background: linear-gradient(170deg, #c67412 30%, #945ef0 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.menu2 h3 {
+  font-family: serif12beta;
+  font-weight: bold;
+}
 .menu2 p {
-  font-family: serif12beta-bold;
-  color: #c67412;
+  font-family: serif12beta;
 }
 .menu3 {
   background-color: #f9f9f9;
 }
 .menu3 h2 {
   font-family: dancingscript;
-  font-size: xx-large;
-  font-weight: lighter;
+  font-size: 4.5em;
   background: linear-gradient(170deg, #0328db 30%, #229dfd 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.menu3 h3 {
+  font-family: segoeprint;
+  font-weight: normal;
+}
 .menu3 p {
   font-family: segoeprint;
-  color: #229dfd;
 }
 .menu4 {
   background-color: #fdfffd;
 }
 .menu4 h2 {
   font-family: kaushanscript;
-  font-size: xx-large;
-  font-weight: lighter;
+  font-size: 4.5em;
   background: linear-gradient(170deg, #499c40 30%, #bbfd7e 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.menu4 h3 {
+  font-family: segoeprint;
+  font-weight: normal;
+}
 .menu4 p {
   font-family: segoeprint;
-  color: #7ac75b;
-}
-.menu article {
-  width: 75%;
-  margin: 3% auto 3% auto;
-}
-.menu h3 {
-  margin-top: 3%;
-  margin-bottom: 3%;
-}
-.menu p {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 3%;
-  margin-bottom: 3%;
 }
 
 .prev-menus {
@@ -210,7 +219,7 @@ footer p {
 }
 .prev-menu1 h2 {
   font-family: devonshire;
-  font-size: xx-large;
+  font-size: 2.5em;
   font-weight: lighter;
   background: linear-gradient(170deg, black 30%, black 60%);
   background-clip: text;
@@ -222,13 +231,14 @@ footer p {
   font-family: segoeprint;
   font-size: 3em;
   color: black;
+  font-weight: bold;
 }
 .prev-menu2 {
   background-color: #fef5fd;
 }
 .prev-menu2 h2 {
   font-family: croissantone;
-  font-size: xx-large;
+  font-size: 2em;
   font-weight: lighter;
   background: linear-gradient(170deg, #c67412 30%, #945ef0 60%);
   background-clip: text;
@@ -237,16 +247,17 @@ footer p {
   margin: 0;
 }
 .prev-menu2 p {
-  font-family: serif12beta-bold;
+  font-family: serif12beta;
   font-size: 3em;
   color: #c67412;
+  font-weight: bold;
 }
 .prev-menu3 {
   background-color: #f9f9f9;
 }
 .prev-menu3 h2 {
   font-family: dancingscript;
-  font-size: xx-large;
+  font-size: 2.5em;
   font-weight: lighter;
   background: linear-gradient(170deg, #0328db 30%, #229dfd 60%);
   background-clip: text;
@@ -258,13 +269,14 @@ footer p {
   font-family: segoeprint;
   font-size: 3em;
   color: #229dfd;
+  font-weight: bold;
 }
 .prev-menu4 {
   background-color: #fdfffd;
 }
 .prev-menu4 h2 {
   font-family: kaushanscript;
-  font-size: xx-large;
+  font-size: 2.5em;
   font-weight: lighter;
   background: linear-gradient(170deg, #499c40 30%, #bbfd7e 60%);
   background-clip: text;
@@ -276,6 +288,7 @@ footer p {
   font-family: segoeprint;
   font-size: 3em;
   color: #7ac75b;
+  font-weight: bold;
 }
 
 .soon {
