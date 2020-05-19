@@ -1,3 +1,7 @@
+@mixin menu-shadow{
+    box-shadow: 1px 1px 10px #c7c3c3;
+}
+
 @mixin style-prev-menu (){
     @each $number, $style in $map-menus{
         &#{$number}{

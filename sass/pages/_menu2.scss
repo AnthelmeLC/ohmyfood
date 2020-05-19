@@ -1,0 +1,20 @@
+@mixin color-menu2 ($number){
+    $style: map-get($map-menus, $number);
+    article{
+        color: #a56799;
+    }
+    article:first-of-type{
+        color: map-get($style, color1);
+    }
+    article:last-child{
+        color: map-get($style, color2);
+    }
+}
+
+
+.menu2{
+    @include color-menu2(2);
+    article{
+        margin-bottom: 8%;
+    }
+}

@@ -50,10 +50,12 @@ body {
   background-color: #fff;
 }
 
+#invisible {
+  display: none;
+}
+
 a {
   text-decoration: none;
-}
-a:visited {
   color: inherit;
 }
 
@@ -96,13 +98,14 @@ footer p {
   margin: 3% auto 3% auto;
   padding: 1%;
   text-align: center;
+  box-shadow: 1px 1px 10px #c7c3c3;
 }
 .menu h2 {
   font-weight: lighter;
   margin-bottom: 10%;
 }
 .menu article {
-  width: 80%;
+  width: 90%;
   margin: 5% auto 5% auto;
 }
 .menu article h3 {
@@ -113,13 +116,13 @@ footer p {
   font-size: larger;
 }
 .menu article h3 img {
-  max-width: 12em;
+  max-width: 15em;
 }
 .menu article p {
   display: flex;
   justify-content: space-between;
-  padding-left: 7%;
-  padding-right: 7%;
+  padding-left: 10%;
+  padding-right: 10%;
   margin-top: 3%;
   margin-bottom: 3%;
 }
@@ -316,6 +319,46 @@ footer p {
   border-radius: 50%;
   margin-left: 2%;
   margin-bottom: 4px;
+}
+
+.menu1 article {
+  margin-bottom: 10%;
+}
+.menu1 article p {
+  padding: 0;
+}
+.menu1 h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu1 h4 {
+  font-family: devonshire;
+  font-size: xx-large;
+  font-weight: lighter;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu1 h4 img {
+  margin-right: 20px;
+  width: 5%;
+}
+
+.menu2 article {
+  color: #a56799;
+}
+.menu2 article:first-of-type {
+  color: #c67412;
+}
+.menu2 article:last-child {
+  color: #945ef0;
+}
+.menu2 article {
+  margin-bottom: 8%;
 }
 
 /*# sourceMappingURL=style.css.map */

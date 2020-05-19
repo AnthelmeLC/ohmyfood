@@ -10,7 +10,7 @@
     }
     article{
         height: 100%;
-        box-shadow: 1px 1px 10px #c7c3c3;
+        @include menu-shadow;
         display: flex;
         flex-direction: column;
         justify-content: center;
