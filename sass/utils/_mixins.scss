@@ -12,9 +12,9 @@
                 font-weight: lighter;
                 background: linear-gradient(170deg, map-get($style, color1) 30%, map-get($style, color2) 60%);
                 background-clip: text;
-                -webkit-text-fill-color: transparent;
-                padding: 0 4px 0 4px;
+                -webkit-text-fill-color: transparent;;
                 margin: 0;
+                width: 100%;
                 }
             p{
                 font-family: map-get($style, font-p);

@@ -34,6 +34,47 @@
   font-family: "kaushanscript";
   src: url(../ressources/fonts/kaushanscript.ttf);
 }
+.prev-menus article:hover img, .prev-menus article:hover h2, .prev-menus article:hover p {
+  transition: all ease-in 200ms;
+  scale: 1;
+  opacity: 1;
+  transform: scale(1.15);
+  opacity: 0.7;
+}
+
+@keyframes soon {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.soon .point1 {
+  animation: soon 800ms ease-in-out infinite alternate;
+  animation-delay: 100ms;
+}
+.soon .point2 {
+  animation: soon 800ms ease-in-out infinite alternate;
+  animation-delay: 200ms;
+}
+.soon .point3 {
+  animation: soon 800ms ease-in-out infinite alternate;
+  animation-delay: 300ms;
+}
+
+@keyframes wiggle {
+  25% {
+    transform: perspective(1000px) rotateZ(-5deg);
+  }
+  75% {
+    transform: perspective(1000px) rotateZ(5deg);
+  }
+}
+footer a:hover {
+  animation: wiggle 150ms ease-in-out 2;
+}
+
 html {
   background-color: #ededed;
 }
@@ -215,6 +256,7 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .prev-menu1 {
@@ -227,8 +269,8 @@ footer p {
   background: linear-gradient(170deg, black 30%, black 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 0 4px 0 4px;
   margin: 0;
+  width: 100%;
 }
 .prev-menu1 p {
   font-family: segoeprint;
@@ -246,8 +288,8 @@ footer p {
   background: linear-gradient(170deg, #c67412 30%, #945ef0 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 0 4px 0 4px;
   margin: 0;
+  width: 100%;
 }
 .prev-menu2 p {
   font-family: serif12beta;
@@ -265,8 +307,8 @@ footer p {
   background: linear-gradient(170deg, #0328db 30%, #229dfd 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 0 4px 0 4px;
   margin: 0;
+  width: 100%;
 }
 .prev-menu3 p {
   font-family: segoeprint;
@@ -284,8 +326,8 @@ footer p {
   background: linear-gradient(170deg, #499c40 30%, #bbfd7e 60%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 0 4px 0 4px;
   margin: 0;
+  width: 100%;
 }
 .prev-menu4 p {
   font-family: segoeprint;
@@ -313,8 +355,8 @@ footer p {
 }
 .soon div {
   align-self: flex-end;
-  width: 5px;
-  height: 5px;
+  width: 7px;
+  height: 7px;
   background: #fcca46;
   border-radius: 50%;
   margin-left: 2%;
