@@ -75,6 +75,26 @@ footer a:hover {
   animation: wiggle 150ms ease-in-out 2;
 }
 
+.menu h3 em {
+  position: relative;
+  font-style: normal;
+}
+.menu h3 em::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: left;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: transform 400ms ease;
+}
+.menu h3 em:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
 html {
   background-color: #ededed;
 }
@@ -393,14 +413,30 @@ footer p {
 .menu2 article {
   color: #a56799;
 }
+.menu2 article h3 em::after {
+  background-color: #a56799;
+}
 .menu2 article:first-of-type {
   color: #c67412;
+}
+.menu2 article:first-of-type h3 em::after {
+  background-color: #c67412;
 }
 .menu2 article:last-child {
   color: #945ef0;
 }
+.menu2 article:last-child h3 em::after {
+  background-color: #945ef0;
+}
 .menu2 article {
   margin-bottom: 8%;
+}
+
+.mentionslegales {
+  text-align: left;
+}
+.mentionslegales h2 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
