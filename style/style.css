@@ -1,0 +1,442 @@
+@font-face {
+  font-family: "montserrat-semibold";
+  src: url(../ressources/fonts/montserrat-semibold.ttf);
+}
+@font-face {
+  font-family: "montserrat-light";
+  src: url(../ressources/fonts/montserrat-light.ttf);
+}
+@font-face {
+  font-family: "streetfreehand";
+  src: url(../ressources/fonts/streetfreehand.ttf);
+}
+@font-face {
+  font-family: "devonshire";
+  src: url(../ressources/fonts/devonshire.ttf);
+}
+@font-face {
+  font-family: "serif12beta";
+  src: url(../ressources/fonts/serif12beta.ttf);
+}
+@font-face {
+  font-family: "croissantone";
+  src: url(../ressources/fonts/croissantone.ttf);
+}
+@font-face {
+  font-family: "dancingscript";
+  src: url(../ressources/fonts/dancingscript.ttf);
+}
+@font-face {
+  font-family: "segoeprint";
+  src: url(../ressources/fonts/segoeprint.ttf);
+}
+@font-face {
+  font-family: "kaushanscript";
+  src: url(../ressources/fonts/kaushanscript.ttf);
+}
+.prev-menus article:hover img, .prev-menus article:hover h2, .prev-menus article:hover p {
+  transition: all ease-in 200ms;
+  scale: 1;
+  opacity: 1;
+  transform: scale(1.15);
+  opacity: 0.7;
+}
+
+@keyframes soon {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.soon .point1 {
+  animation: soon 800ms ease-in-out infinite alternate;
+  animation-delay: 100ms;
+}
+.soon .point2 {
+  animation: soon 800ms ease-in-out infinite alternate;
+  animation-delay: 200ms;
+}
+.soon .point3 {
+  animation: soon 800ms ease-in-out infinite alternate;
+  animation-delay: 300ms;
+}
+
+@keyframes wiggle {
+  25% {
+    transform: perspective(1000px) rotateZ(-5deg);
+  }
+  75% {
+    transform: perspective(1000px) rotateZ(5deg);
+  }
+}
+footer a:hover {
+  animation: wiggle 150ms ease-in-out 2;
+}
+
+.menu h3 em {
+  position: relative;
+  font-style: normal;
+}
+.menu h3 em::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: left;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: transform 400ms ease;
+}
+.menu h3 em:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+html {
+  background-color: #ededed;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 61px;
+  background-color: #fff;
+}
+
+#invisible {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header, footer {
+  color: #fcca46;
+  background-color: #569c87;
+}
+
+header {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+header h1 {
+  margin: 0;
+  font-family: montserrat-semibold;
+  letter-spacing: -5px;
+  font-size: 3em;
+}
+
+footer {
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  font-family: montserrat-light;
+  position: fixed;
+  bottom: 0;
+}
+footer a {
+  margin-right: 2%;
+  margin-left: 2%;
+}
+footer p {
+  font-size: x-large;
+  margin: 20px 0 20px 0;
+}
+
+.menu {
+  width: 70%;
+  margin: 3% auto 3% auto;
+  padding: 1%;
+  text-align: center;
+  box-shadow: 1px 1px 10px #c7c3c3;
+}
+.menu h2 {
+  font-weight: lighter;
+  margin-bottom: 10%;
+}
+.menu article {
+  width: 90%;
+  margin: 5% auto 5% auto;
+}
+.menu article h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+  font-size: larger;
+}
+.menu article h3 img {
+  max-width: 15em;
+}
+.menu article p {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.menu article p em {
+  font-size: larger;
+}
+.menu1 {
+  background-color: #fcdfdb;
+}
+.menu1 h2 {
+  font-family: devonshire;
+  font-size: 3em;
+  background: linear-gradient(170deg, black 30%, black 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu1 h3 {
+  font-family: segoeprint;
+  font-weight: bold;
+}
+.menu1 p {
+  font-family: segoeprint;
+}
+.menu2 {
+  background-color: #fef5fd;
+}
+.menu2 h2 {
+  font-family: croissantone;
+  font-size: 2.5em;
+  background: linear-gradient(170deg, #c67412 30%, #945ef0 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu2 h3 {
+  font-family: serif12beta;
+  font-weight: bold;
+}
+.menu2 p {
+  font-family: serif12beta;
+}
+.menu3 {
+  background-color: #f9f9f9;
+}
+.menu3 h2 {
+  font-family: dancingscript;
+  font-size: 4.5em;
+  background: linear-gradient(170deg, #0328db 30%, #229dfd 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu3 h3 {
+  font-family: segoeprint;
+  font-weight: normal;
+}
+.menu3 p {
+  font-family: segoeprint;
+}
+.menu4 {
+  background-color: #fdfffd;
+}
+.menu4 h2 {
+  font-family: kaushanscript;
+  font-size: 4.5em;
+  background: linear-gradient(170deg, #499c40 30%, #bbfd7e 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu4 h3 {
+  font-family: segoeprint;
+  font-weight: normal;
+}
+.menu4 p {
+  font-family: segoeprint;
+}
+
+.prev-menus {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.prev-menus a {
+  width: 35%;
+  height: 500px;
+  margin-top: 5%;
+}
+.prev-menus article {
+  height: 100%;
+  box-shadow: 1px 1px 10px #c7c3c3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.prev-menu1 {
+  background-color: #fcdfdb;
+}
+.prev-menu1 h2 {
+  font-family: devonshire;
+  font-size: 2.5em;
+  font-weight: lighter;
+  background: linear-gradient(170deg, black 30%, black 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  width: 100%;
+}
+.prev-menu1 p {
+  font-family: segoeprint;
+  font-size: 3em;
+  color: black;
+  font-weight: bold;
+}
+.prev-menu2 {
+  background-color: #fef5fd;
+}
+.prev-menu2 h2 {
+  font-family: croissantone;
+  font-size: 2em;
+  font-weight: lighter;
+  background: linear-gradient(170deg, #c67412 30%, #945ef0 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  width: 100%;
+}
+.prev-menu2 p {
+  font-family: serif12beta;
+  font-size: 3em;
+  color: #c67412;
+  font-weight: bold;
+}
+.prev-menu3 {
+  background-color: #f9f9f9;
+}
+.prev-menu3 h2 {
+  font-family: dancingscript;
+  font-size: 2.5em;
+  font-weight: lighter;
+  background: linear-gradient(170deg, #0328db 30%, #229dfd 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  width: 100%;
+}
+.prev-menu3 p {
+  font-family: segoeprint;
+  font-size: 3em;
+  color: #229dfd;
+  font-weight: bold;
+}
+.prev-menu4 {
+  background-color: #fdfffd;
+}
+.prev-menu4 h2 {
+  font-family: kaushanscript;
+  font-size: 2.5em;
+  font-weight: lighter;
+  background: linear-gradient(170deg, #499c40 30%, #bbfd7e 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  width: 100%;
+}
+.prev-menu4 p {
+  font-family: segoeprint;
+  font-size: 3em;
+  color: #7ac75b;
+  font-weight: bold;
+}
+
+.soon {
+  display: flex;
+  justify-content: center;
+  color: #fcca46;
+  background-color: #569c87;
+  font-family: montserrat-light;
+  width: 33%;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 8px;
+  margin: 5% auto 5% auto;
+}
+.soon h3 {
+  margin: 0;
+  font-size: xx-large;
+}
+.soon div {
+  align-self: flex-end;
+  width: 7px;
+  height: 7px;
+  background: #fcca46;
+  border-radius: 50%;
+  margin-left: 2%;
+  margin-bottom: 4px;
+}
+
+.menu1 article {
+  margin-bottom: 10%;
+}
+.menu1 article p {
+  padding: 0;
+}
+.menu1 h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu1 h4 {
+  font-family: devonshire;
+  font-size: xx-large;
+  font-weight: lighter;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu1 h4 img {
+  margin-right: 20px;
+  width: 5%;
+}
+
+.menu2 article {
+  color: #a56799;
+}
+.menu2 article h3 em::after {
+  background-color: #a56799;
+}
+.menu2 article:first-of-type {
+  color: #c67412;
+}
+.menu2 article:first-of-type h3 em::after {
+  background-color: #c67412;
+}
+.menu2 article:last-child {
+  color: #945ef0;
+}
+.menu2 article:last-child h3 em::after {
+  background-color: #945ef0;
+}
+.menu2 article {
+  margin-bottom: 8%;
+}
+
+.mentionslegales {
+  text-align: left;
+}
+.mentionslegales h2 {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

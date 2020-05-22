@@ -1,0 +1,49 @@
+@mixin menu-shadow{
+    box-shadow: 1px 1px 10px #c7c3c3;
+}
+
+@mixin style-prev-menu (){
+    @each $number, $style in $map-menus{
+        &#{$number}{
+            background-color: map-get($style, bg-color);
+            h2{
+                font-family: map-get($style, main-font);
+                font-size: map-get($style, prev-title-size);
+                font-weight: lighter;
+                background: linear-gradient(170deg, map-get($style, color1) 30%, map-get($style, color2) 60%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;;
+                margin: 0;
+                width: 100%;
+                }
+            p{
+                font-family: map-get($style, font-p);
+                font-size: 3em;
+                color: map-get($style, color-p);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@mixin style-menu (){
+    @each $number, $style in $map-menus{
+        &#{$number}{
+            background-color: map-get($style, bg-color);
+            h2{
+                font-family: map-get($style, main-font);
+                font-size: map-get($style, title-size);
+                background: linear-gradient(170deg, map-get($style, color1) 30%, map-get($style, color2) 60%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                }
+            h3{
+                font-family: map-get($style, font-p);
+                font-weight: map-get($style, subtitle-weight);
+            }
+            p{
+                font-family: map-get($style, font-p);
+            }
+        }
+    }
+}
