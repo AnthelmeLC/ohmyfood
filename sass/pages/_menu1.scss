@@ -1,9 +1,3 @@
-@mixin h4-menu1($number){
-    $style: map-get($map-menus, $number);
-    font-family: map-get($style, main-font);
-}
-
-
 .menu1{
     article{
         margin-bottom: 10%;
