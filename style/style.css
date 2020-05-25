@@ -1,3 +1,229 @@
+html {
+  background-color: #ededed;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 61px;
+  background-color: #fff;
+  position: relative;
+}
+
+#invisible {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a :hover {
+  cursor: pointer;
+}
+
+header, footer {
+  color: #fcca46;
+  background-color: #569c87;
+}
+
+header {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+header h1 {
+  margin: 0;
+  font-family: montserrat-semibold;
+  letter-spacing: -5px;
+  font-size: 3em;
+}
+
+footer {
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  font-family: montserrat-light;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+footer a {
+  margin-right: 2%;
+  margin-left: 2%;
+}
+footer p {
+  font-size: x-large;
+  margin: 20px 0 20px 0;
+}
+
+.menu {
+  width: 70%;
+  margin: 3% auto 3% auto;
+  padding: 1%;
+  text-align: center;
+  box-shadow: 1px 1px 10px #c7c3c3;
+}
+.menu h2 {
+  font-weight: lighter;
+  margin-bottom: 10%;
+}
+.menu article {
+  width: 90%;
+  margin: 5% auto 5% auto;
+}
+.menu article h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+  font-size: larger;
+}
+.menu article h3 img {
+  display: block;
+  width: 33%;
+}
+.menu article p {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: left;
+}
+.menu article p em {
+  font-size: larger;
+}
+.menu1 {
+  background-color: #fcdfdb;
+}
+.menu1 h2 {
+  font-family: devonshire;
+  font-size: 3em;
+  background: linear-gradient(170deg, black 30%, black 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu1 h3 {
+  font-family: segoeprint;
+  font-weight: bold;
+}
+.menu1 p {
+  font-family: segoeprint;
+}
+.menu2 {
+  background-color: #fef5fd;
+}
+.menu2 h2 {
+  font-family: croissantone;
+  font-size: 2.5em;
+  background: linear-gradient(170deg, #c67412 30%, #945ef0 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu2 h3 {
+  font-family: serif12beta;
+  font-weight: bold;
+}
+.menu2 p {
+  font-family: serif12beta;
+}
+.menu3 {
+  background-color: #f9f9f9;
+}
+.menu3 h2 {
+  font-family: dancingscript;
+  font-size: 4.5em;
+  background: linear-gradient(170deg, #0328db 30%, #229dfd 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu3 h3 {
+  font-family: segoeprint;
+  font-weight: normal;
+}
+.menu3 p {
+  font-family: segoeprint;
+}
+.menu4 {
+  background-color: #fdfffd;
+}
+.menu4 h2 {
+  font-family: kaushanscript;
+  font-size: 4.5em;
+  background: linear-gradient(170deg, #499c40 30%, #bbfd7e 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu4 h3 {
+  font-family: segoeprint;
+  font-weight: normal;
+}
+.menu4 p {
+  font-family: segoeprint;
+}
+
+@media all and (max-width: 1299px) {
+  footer {
+    left: 0;
+    width: 100%;
+  }
+
+  .menu {
+    width: 80%;
+  }
+}
+@media all and (max-width: 1089px) {
+  .menu {
+    width: 90%;
+  }
+}
+@media all and (max-width: 969px) {
+  .menu {
+    width: 100%;
+  }
+}
+@media all and (max-width: 879px) {
+  .menu article {
+    width: 95%;
+  }
+  .menu article p {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+@media all and (max-width: 726px) {
+  .menu1 h2 {
+    font-size: 8vw;
+  }
+  .menu2 h2 {
+    font-size: 7vw;
+  }
+  .menu3 h2 {
+    font-size: 10vw;
+  }
+  .menu4 h2 {
+    font-size: 10vw;
+  }
+  .menu article h3 img {
+    width: 27%;
+  }
+}
+@media all and (max-width: 537px) {
+  .menu article h3 {
+    font-size: medium;
+  }
+
+  footer p {
+    font-size: small;
+  }
+}
 @font-face {
   font-family: "montserrat-semibold";
   src: url(../ressources/fonts/montserrat-semibold.ttf);
@@ -95,177 +321,13 @@ footer a:hover {
   transform: translateX(-50%) scaleX(1);
 }
 
-html {
-  background-color: #ededed;
-}
-
-body {
-  margin: 0;
-}
-
-.container {
-  width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 61px;
-  background-color: #fff;
-}
-
-#invisible {
-  display: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-header, footer {
-  color: #fcca46;
-  background-color: #569c87;
-}
-
-header {
-  text-align: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-header h1 {
-  margin: 0;
-  font-family: montserrat-semibold;
-  letter-spacing: -5px;
-  font-size: 3em;
-}
-
-footer {
-  width: 1300px;
-  display: flex;
-  justify-content: space-between;
-  font-family: montserrat-light;
-  position: fixed;
-  bottom: 0;
-}
-footer a {
-  margin-right: 2%;
-  margin-left: 2%;
-}
-footer p {
-  font-size: x-large;
-  margin: 20px 0 20px 0;
-}
-
-.menu {
-  width: 70%;
-  margin: 3% auto 3% auto;
-  padding: 1%;
-  text-align: center;
-  box-shadow: 1px 1px 10px #c7c3c3;
-}
-.menu h2 {
-  font-weight: lighter;
-  margin-bottom: 10%;
-}
-.menu article {
-  width: 90%;
-  margin: 5% auto 5% auto;
-}
-.menu article h3 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 5%;
-  font-size: larger;
-}
-.menu article h3 img {
-  max-width: 15em;
-}
-.menu article p {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-top: 3%;
-  margin-bottom: 3%;
-}
-.menu article p em {
-  font-size: larger;
-}
-.menu1 {
-  background-color: #fcdfdb;
-}
-.menu1 h2 {
-  font-family: devonshire;
-  font-size: 3em;
-  background: linear-gradient(170deg, black 30%, black 60%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.menu1 h3 {
-  font-family: segoeprint;
-  font-weight: bold;
-}
-.menu1 p {
-  font-family: segoeprint;
-}
-.menu2 {
-  background-color: #fef5fd;
-}
-.menu2 h2 {
-  font-family: croissantone;
-  font-size: 2.5em;
-  background: linear-gradient(170deg, #c67412 30%, #945ef0 60%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.menu2 h3 {
-  font-family: serif12beta;
-  font-weight: bold;
-}
-.menu2 p {
-  font-family: serif12beta;
-}
-.menu3 {
-  background-color: #f9f9f9;
-}
-.menu3 h2 {
-  font-family: dancingscript;
-  font-size: 4.5em;
-  background: linear-gradient(170deg, #0328db 30%, #229dfd 60%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.menu3 h3 {
-  font-family: segoeprint;
-  font-weight: normal;
-}
-.menu3 p {
-  font-family: segoeprint;
-}
-.menu4 {
-  background-color: #fdfffd;
-}
-.menu4 h2 {
-  font-family: kaushanscript;
-  font-size: 4.5em;
-  background: linear-gradient(170deg, #499c40 30%, #bbfd7e 60%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.menu4 h3 {
-  font-family: segoeprint;
-  font-weight: normal;
-}
-.menu4 p {
-  font-family: segoeprint;
-}
-
 .prev-menus {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 .prev-menus a {
-  width: 35%;
+  width: 455px;
   height: 500px;
   margin-top: 5%;
 }
@@ -291,6 +353,7 @@ footer p {
   -webkit-text-fill-color: transparent;
   margin: 0;
   width: 100%;
+  z-index: 1;
 }
 .prev-menu1 p {
   font-family: segoeprint;
@@ -310,6 +373,7 @@ footer p {
   -webkit-text-fill-color: transparent;
   margin: 0;
   width: 100%;
+  z-index: 1;
 }
 .prev-menu2 p {
   font-family: serif12beta;
@@ -329,6 +393,7 @@ footer p {
   -webkit-text-fill-color: transparent;
   margin: 0;
   width: 100%;
+  z-index: 1;
 }
 .prev-menu3 p {
   font-family: segoeprint;
@@ -348,6 +413,7 @@ footer p {
   -webkit-text-fill-color: transparent;
   margin: 0;
   width: 100%;
+  z-index: 1;
 }
 .prev-menu4 p {
   font-family: segoeprint;
@@ -362,7 +428,7 @@ footer p {
   color: #fcca46;
   background-color: #569c87;
   font-family: montserrat-light;
-  width: 33%;
+  width: 429px;
   text-align: center;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -383,6 +449,18 @@ footer p {
   margin-bottom: 4px;
 }
 
+@media all and (max-width: 455px) {
+  .prev-menus a {
+    width: 100%;
+  }
+
+  .soon {
+    width: 98%;
+  }
+  .soon h3 {
+    font-size: large;
+  }
+}
 .menu1 article {
   margin-bottom: 10%;
 }

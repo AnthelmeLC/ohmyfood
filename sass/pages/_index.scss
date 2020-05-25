@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     a{
 
-        width: 35%;
+        width: 455px;
         height: 500px;
         margin-top: 5%;
     }
@@ -29,7 +29,7 @@
     color: $main-color;
     background-color: $main-bg-color;
     font-family: $main-font;
-    width: 33%;
+    width: 429px;
     text-align: center;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -47,5 +47,17 @@
         border-radius: 50%;
         margin-left: 2%;
         margin-bottom: 4px;
+    }
+}
+
+@media all and (max-width: 455px){
+    .prev-menus a{
+        width: 100%;
+    }
+    .soon{
+        width: 98%;
+        h3{
+            font-size: large;
+        }
     }
 }
