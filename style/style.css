@@ -1,3 +1,39 @@
+@font-face {
+  font-family: "montserrat-semibold";
+  src: url(../../ressources/fonts/montserrat-semibold.ttf);
+}
+@font-face {
+  font-family: "montserrat-light";
+  src: url(../../ressources/fonts/montserrat-light.ttf);
+}
+@font-face {
+  font-family: "streetfreehand";
+  src: url(../../ressources/fonts/streetfreehand.ttf);
+}
+@font-face {
+  font-family: "devonshire";
+  src: url(../../ressources/fonts/devonshire.ttf);
+}
+@font-face {
+  font-family: "serif12beta";
+  src: url(../../ressources/fonts/serif12beta.ttf);
+}
+@font-face {
+  font-family: "croissantone";
+  src: url(../../ressources/fonts/croissantone.ttf);
+}
+@font-face {
+  font-family: "dancingscript";
+  src: url(../../ressources/fonts/dancingscript.ttf);
+}
+@font-face {
+  font-family: "segoeprint";
+  src: url(../../ressources/fonts/segoeprint.ttf);
+}
+@font-face {
+  font-family: "kaushanscript";
+  src: url(../../ressources/fonts/kaushanscript.ttf);
+}
 html {
   background-color: #ededed;
 }
@@ -65,7 +101,8 @@ footer p {
 .menu {
   width: 70%;
   margin: 3% auto 3% auto;
-  padding: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   text-align: center;
   box-shadow: 1px 1px 10px #c7c3c3;
 }
@@ -107,7 +144,7 @@ footer p {
   font-family: devonshire;
   font-size: 3em;
   background: linear-gradient(170deg, black 30%, black 60%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu1 h3 {
@@ -124,7 +161,7 @@ footer p {
   font-family: croissantone;
   font-size: 2.5em;
   background: linear-gradient(170deg, #c67412 30%, #945ef0 60%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu2 h3 {
@@ -141,7 +178,7 @@ footer p {
   font-family: dancingscript;
   font-size: 4.5em;
   background: linear-gradient(170deg, #0328db 30%, #229dfd 60%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu3 h3 {
@@ -158,7 +195,7 @@ footer p {
   font-family: kaushanscript;
   font-size: 4.5em;
   background: linear-gradient(170deg, #499c40 30%, #bbfd7e 60%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu4 h3 {
@@ -214,6 +251,9 @@ footer p {
   .menu article h3 img {
     width: 27%;
   }
+  .menu p em {
+    margin-left: 5%;
+  }
 }
 @media all and (max-width: 537px) {
   .menu article h3 {
@@ -224,45 +264,9 @@ footer p {
     font-size: small;
   }
 }
-@font-face {
-  font-family: "montserrat-semibold";
-  src: url(../ressources/fonts/montserrat-semibold.ttf);
-}
-@font-face {
-  font-family: "montserrat-light";
-  src: url(../ressources/fonts/montserrat-light.ttf);
-}
-@font-face {
-  font-family: "streetfreehand";
-  src: url(../ressources/fonts/streetfreehand.ttf);
-}
-@font-face {
-  font-family: "devonshire";
-  src: url(../ressources/fonts/devonshire.ttf);
-}
-@font-face {
-  font-family: "serif12beta";
-  src: url(../ressources/fonts/serif12beta.ttf);
-}
-@font-face {
-  font-family: "croissantone";
-  src: url(../ressources/fonts/croissantone.ttf);
-}
-@font-face {
-  font-family: "dancingscript";
-  src: url(../ressources/fonts/dancingscript.ttf);
-}
-@font-face {
-  font-family: "segoeprint";
-  src: url(../ressources/fonts/segoeprint.ttf);
-}
-@font-face {
-  font-family: "kaushanscript";
-  src: url(../ressources/fonts/kaushanscript.ttf);
-}
+/*ANIMATIONS*/
 .prev-menus article:hover img, .prev-menus article:hover h2, .prev-menus article:hover p {
   transition: all ease-in 200ms;
-  scale: 1;
   opacity: 1;
   transform: scale(1.15);
   opacity: 0.7;
@@ -321,6 +325,7 @@ footer a:hover {
   transform: translateX(-50%) scaleX(1);
 }
 
+/*INDEX*/
 .prev-menus {
   display: flex;
   justify-content: space-around;
@@ -349,7 +354,7 @@ footer a:hover {
   font-size: 2.5em;
   font-weight: lighter;
   background: linear-gradient(170deg, black 30%, black 60%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
   width: 100%;
@@ -369,7 +374,7 @@ footer a:hover {
   font-size: 2em;
   font-weight: lighter;
   background: linear-gradient(170deg, #c67412 30%, #945ef0 60%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
   width: 100%;
@@ -389,7 +394,7 @@ footer a:hover {
   font-size: 2.5em;
   font-weight: lighter;
   background: linear-gradient(170deg, #0328db 30%, #229dfd 60%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
   width: 100%;
@@ -409,7 +414,7 @@ footer a:hover {
   font-size: 2.5em;
   font-weight: lighter;
   background: linear-gradient(170deg, #499c40 30%, #bbfd7e 60%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
   width: 100%;
@@ -461,6 +466,7 @@ footer a:hover {
     font-size: large;
   }
 }
+/*PAGES*/
 .menu1 article {
   margin-bottom: 10%;
 }

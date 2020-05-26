@@ -1,7 +1,8 @@
+/*ANIMATIONS*/
+
 .prev-menus article:hover{
     img, h2, p{
         transition: all ease-in 200ms;
-        scale: 1;
         opacity: 1;
         transform: scale(1.15);
         opacity: 0.7;

@@ -4,7 +4,8 @@
   "description": "troisième projet : Dynamisez une page web avec des animations CSS.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./style/style.css"
+    "sass": "sass --watch ./sass/main.scss:./style/style.css",
+    "prefix": "postcss ./style/style.css --use autoprefixer -d ./style/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/AnthelmeLC/ohmyfood/issues"
   },
