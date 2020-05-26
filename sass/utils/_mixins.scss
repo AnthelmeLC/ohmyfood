@@ -11,8 +11,8 @@
                 font-size: map-get($style, prev-title-size);
                 font-weight: lighter;
                 background: linear-gradient(170deg, map-get($style, color1) 30%, map-get($style, color2) 60%);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
                 margin: 0;
                 width: 100%;
                 z-index: 1;
@@ -35,7 +35,7 @@
                 font-family: map-get($style, main-font);
                 font-size: map-get($style, title-size);
                 background: linear-gradient(170deg, map-get($style, color1) 30%, map-get($style, color2) 60%);
-                background-clip: text;
+                -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 }
             h3{
