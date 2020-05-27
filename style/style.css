@@ -312,9 +312,9 @@ footer a:hover {
 .menu h3 em::after {
   content: "";
   position: absolute;
-  left: 50%;
+  left: 0;
   bottom: 0;
-  transform: translateX(-50%) scaleX(0);
+  transform: scaleX(0);
   transform-origin: left;
   width: 100%;
   height: 2px;
@@ -322,7 +322,7 @@ footer a:hover {
   transition: transform 400ms ease;
 }
 .menu h3 em:hover::after {
-  transform: translateX(-50%) scaleX(1);
+  transform: scaleX(1);
 }
 
 /*INDEX*/
